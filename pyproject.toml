@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zusa-official-bot"
+version = "0.1.0"
+description = "Enterprise-grade foundation for the ZUSA Official Discord Bot"
+readme = "README.md"
+requires-python = ">=3.13"
+authors = [{ name = "Leila" }]
+license = { file = "LICENSE" }
+dependencies = []
+
+[tool.black]
+line-length = 88
+
+[tool.ruff]
+line-length = 88
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
